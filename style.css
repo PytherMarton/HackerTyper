@@ -1,0 +1,62 @@
+body {
+    background-color: black;
+    font-family: monospace;
+    margin: 0;
+    height: 100vh;
+}
+
+#container {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+}
+
+#source {
+    color: #2ad400;
+    font-size: 15px;
+    font-weight: bold;
+    white-space: pre-wrap;
+}
+
+#access-msg {
+    font-size: 3rem;
+    text-align: center;
+    border: 2px solid;
+    position: absolute;
+    z-index: 99;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1.5rem;
+}
+
+.d-none {
+    display: none;
+}
+
+.success {
+    color: #10ff00;
+    display: block;
+    animation: blink 0.5s 2 0s linear;
+}
+
+.denied {
+    color: red;
+    display: block;
+    animation: blink 0.5s 2 0s linear;
+}
+
+.blurred {
+    filter: blur(0.8px);
+}
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
